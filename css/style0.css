@@ -1,0 +1,394 @@
+/*preparation*/
+body, html{
+  width: 100%;
+	margin: 0;
+	background-color: #fff;
+	min-width: 1367px;
+	min-height: 900px;
+	background-attachment: fixed;
+	
+}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body, button ,input, select, textarea{
+	font:12px/1.5 tahoma,arial,'Hiragino Sans GB',sans-serif ;
+  display: block;
+}
+  
+div{
+  display: block;
+}
+
+
+/*mainpage*/
+.mainpage{
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+/*HeadBar*/
+.headbar{
+	vertical-align: top;
+	margin-left: 70px;
+	margin-top: 5px;
+}
+
+.title{
+	height: 76px;
+  overflow: hidden;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+
+/*HUD*/
+
+.HUD{
+	margin: 0px;
+	height: 840px;
+  width: 100%;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.3));
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	background: url("../img/bg.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.HUD:before{
+	display: block;
+  content: "";
+  position: absolute;
+	top: 5em;
+  height: calc(100% - 11em);
+  border-top: 2px solid rgba(225, 225, 225, 0.2);
+  border-left: 1px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.3);
+  z-index: 2;
+}
+
+
+.ElectionPage{
+	width: 913px;
+	height: 950px;
+	background-color: #fff;
+	position: absolute;
+	top: -60px;
+	left: 750px;
+	background: url("../img/bg.png");
+	background-position: center;
+	clip-path: inset(10em);
+  filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login{
+	z-index: +55;
+}
+
+.Login_Title{
+	width: 280px;
+	height:60px;
+	position: absolute;
+	top: 80px;
+	left: 1070px;
+}
+
+.Login_Title img{
+	width: 40px;
+	height: 40px;
+	vertical-align: bottom;
+}
+
+.Login_Title span{
+	margin-left: 50px;
+	text-align: center;
+	font-size: xx-large;
+	font-family: cursive;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.Login_Input .p1{
+	position: absolute;
+  margin-top: 0;
+	margin-bottom: 17px;
+	left: 1070px;
+  top: 175px;
+}
+
+.Login_Input .p2{
+	position: absolute;
+  margin-top: 0;
+	margin-bottom: 17px;
+	left: 1070px;
+  top: 250px;
+}
+
+.Login_Input .p3{
+	position: absolute;
+  margin-top: 0;
+	margin-bottom: 17px;
+	left: 1070px;
+  top: 325px;
+}
+
+.Login_Input .p4{
+	position: absolute;
+  margin-top: 0;
+	margin-bottom: 17px;
+	left: 1070px;
+	top: 400px;
+	width: 280px;
+}
+
+.primary {
+	background-color: #02469ee0;
+	border-color: #003478;
+}
+
+.InputContentIcon{
+	background-color: rgb(242, 242, 242);
+  border-right: none;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.auth_login_btn {
+	color: #fff;
+	padding: 6px 12px;
+	font-family: 幼圆;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-radius: 3px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	width: 100%;
+}
+
+.auth_login_btn:hover{
+	transition-delay: 500ms;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	transition-property: color rgba(0, 195, 255, 0.884);
+}
+
+.InputContentIconUser{
+	background: url(../img/user.png)  no-repeat;
+}
+
+#username{
+	background-color: rgba(90, 90, 90, 0.315);
+	height: 30px;
+	width: 200px;
+	border: none;
+	padding: 6px 12px;
+	font-size: 14px;
+	width: 210px;
+	margin: 0;
+}
+
+.InputContentIconPwd{
+	background: url(../img/lock.png)  no-repeat;
+}
+
+#password{
+	background-color: rgba(90, 90, 90, 0.315);
+	height: 30px;
+	width: 200px;
+	border: none;
+	padding: 6px 12px;
+	font-size: 14px;
+	width: 210px;
+	margin: 0;
+}
+
+.InputContentIconChecking{
+	background: url(../img/Checking.png)  no-repeat;
+}
+
+#captchaResponse{
+	background-color: rgba(90, 90, 90, 0.315);
+	height: 30px;
+	width: 200px;
+	border: none;
+	padding: 6px 12px;
+	font-size: 14px;
+	width: 210px;
+	margin: 0;
+}
+
+.Assistance{
+	position: absolute;;
+  z-index: 2019;
+	left: 950px;
+	top:460px;
+}
+
+.Assistance a{
+	text-decoration: none;
+}
+.AI{
+	text-decoration: none;
+	color: white;
+	font-family: serif;
+	vertical-align: text-bottom;
+	font-size: large;
+}
+
+.InputContentFooter{
+	position: absolute;
+	top: 550px;
+	left: 1080px;
+}
+
+.InputContentFooter a{
+	text-decoration: none;
+}
+
+.InputContentFooter img{
+	margin: 5px 5px;
+}
+
+.AnotherHelp{
+	position: absolute;
+	left: 1150px;
+  top: 700px;
+}
+
+.AnotherHelp a{
+	text-decoration: none;
+	color: rgb(179, 179, 179);
+	font-size: initial;
+}
+/*footer*/
+
+.footer{
+	left: 0px;
+  bottom: 0px;
+  height: 134px;
+  background: #FFFFFF;
+}
+
+.footer_tips1{
+	left: 7%;
+  top: 954px;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  position: absolute;
+}
+
+.tsxx1I{
+	left: 14.9%;
+	top: 954px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	position: absolute;
+}
+
+.tsxx1T{
+	left: 16.7%;
+	top: 952px;
+	height: 16px;
+	display: inline-block;
+	position: absolute;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	color: #5A5A5A;
+	letter-spacing: 0;
+	line-height: 18px;
+	width: 1100px;
+}
+
+.tsxx2I {
+	left: 14.9%;
+	top: 979px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	position: absolute;
+}
+
+.tsxx2T {
+	left: 16.7%;
+	top: 977px;
+	height: 16px;
+	display: inline-block;
+	position: absolute;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	color: #5A5A5A;
+	letter-spacing: 0;
+	line-height: 18px;
+	width: 1100px;
+}
+
+.tsxx3I {
+	left: 14.9%;
+	top: 1005px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	position: absolute;
+}
+
+.tsxx3T {
+	left: 16.7%;
+	top: 1003px;
+	height: 36px;
+	display: inline-block;
+	position: absolute;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	color: #5A5A5A;
+	letter-spacing: 0;
+	line-height: 18px;
+	width: 1055px;
+}
+
+.tsxx4I {
+	left: 14.9%;
+	top: 1030px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	position: absolute;
+}
+
+.tsxx4T {
+	left: 16.7%;
+	top: 1028px;
+	height: 36px;
+	display: inline-block;
+	position: absolute;
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	color: #5A5A5A;
+	letter-spacing: 0;
+	line-height: 18px;
+	width: 1055px;
+}
+
+.QRcode{
+	left: 80%;
+  top: 950px;
+	width: 180px;
+  height: 105px;
+  display: inline-block;
+  position: absolute;
+}
